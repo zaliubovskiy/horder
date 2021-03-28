@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #161616;
+    font-size: 20px;
+    text-decoration-line: none;
+    background: #efefef
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul, li {
+    display: block;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.naming {
+    margin-top: 167px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.search-button {
+    font-size: 20px;
+    color: #161616;
+    text-decoration-line: none;
+}
+
+.main-name {
+    position: absolute;
+    font-size: 80px;
+    color: #161616;
+    text-decoration-line: none;
+    font-weight: bold;
+    margin-left: 803px;
+    margin-top: -93px;
+}
+
+.logo {
+    position: absolute;
+    max-width: 100px;
+    margin-left: 853px;
+    margin-top: -100px;
+}
+
+/*.lnr-moon {*/
+/*    position: absolute;*/
+/*    margin-left: 1470px;*/
+/*    margin-top: -52px;*/
+/*}*/
+
+.dot {
+
+    height: 20px;
+    width: 20px;
+    background-color: #161616;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 1470px;
+    margin-top: -52px;
+    display: inline-block;
+}
+
+
+/*.header {*/
+/*    background: url("../images/background.jpg") no-repeat center top /cover;*/
+/*}*/
+
+/*header a {*/
+/*    color: #161616;*/
+/*}*/
+
+/*.menu {*/
+/*    padding-top: 167px;*/
+/*    display: flex;*/
+/*}*/
+
+/*.menu li a {*/
+/*    text-transform: uppercase;*/
+/*    text-decoration: none;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.menu li {*/
+/*}*/
+
+/*.nav {*/
+/*    display: flex;*/
+/*}*/
+
+/*.logo {*/
+/*    margin-right: 1500px;*/
+/*    max-height: 80px;*/
+/*    max-width: 103px;*/
+/*}*/
