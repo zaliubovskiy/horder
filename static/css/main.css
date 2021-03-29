@@ -18,6 +18,10 @@ ul, li {
     display: block;
 }
 
+.header {
+    margin-top: -50px;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -30,6 +34,7 @@ ul, li {
 }
 
 .search-button {
+    margin-left: 100px;
     font-size: 20px;
     color: #161616;
     text-decoration-line: none;
@@ -48,18 +53,11 @@ ul, li {
 .logo {
     position: absolute;
     max-width: 100px;
-    margin-left: 853px;
+    margin-left: 851px;
     margin-top: -100px;
 }
 
-/*.lnr-moon {*/
-/*    position: absolute;*/
-/*    margin-left: 1470px;*/
-/*    margin-top: -52px;*/
-/*}*/
-
 .dot {
-
     height: 20px;
     width: 20px;
     background-color: #161616;
@@ -68,6 +66,24 @@ ul, li {
     margin-left: 1470px;
     margin-top: -52px;
     display: inline-block;
+}
+
+/*.box {*/
+/*    position: relative;*/
+/*    width: 500px;*/
+/*    height: 300px;*/
+/*}*/
+
+.random_picture {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 50px;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform:translate(-50%,-50%);*/
+    width: 1100px;
+    height: 750px;
+    object-fit: cover;
 }
 
 

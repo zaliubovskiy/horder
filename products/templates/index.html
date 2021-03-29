@@ -36,11 +36,27 @@
 {#            <span class="lnr lnr-moon"></span>#}
 
             <span class="dot"></span>
-
-
-
         </div>
     </header>
+    <div class="box">
+        <script class="random_image">
+            var a=Math.round(Math.random()*9)
+            // это число должно совпадать с максимальным индексом таблицы изображений
+            image = new Array();
+            image[0]="{% static 'img/1.jpg' %}"
+            image[1]="{% static 'img/2.jpg' %}"
+            image[2]="{% static 'img/3.jpg' %}"
+            image[3]="{% static 'img/4.jpg' %}"
+            image[4]="{% static 'img/5.jpg' %}"
+            image[5]="{% static 'img/6.jpg' %}"
+            image[6]="{% static 'img/7.jpg' %}"
+            image[7]="{% static 'img/8.jpg' %}"
+            image[8]="{% static 'img/9.jpg' %}"
+            image[9]="{% static 'img/10.jpg' %}"
+            // с максимальным индексом image[..] совпадает число, на которое умножаем вверху
+            document.write ("<img alt='Image not found' class='random_picture' src="+image[a]+">");
+    </script>
+    </div>
     <section id="about" class="about">
         <div class="container">
 
