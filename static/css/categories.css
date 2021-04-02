@@ -1,0 +1,15 @@
+/* list styles */
+div.mainstyle { width: 350px; margin-left: 1150px;}
+div.mainstyle ul ul { margin-left: 25px; }
+div.mainstyle ul, div.mainstyle li { padding: 0; margin: 0; list-style-type: none; }
+div.mainstyle li a { margin-left: 0;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 100%; height: 100%;
+    color: #161616;
+    text-transform: uppercase;
+    display: block;
+}
+div.mainstyle li a:hover { color: #93282C; }
+/* tree version */

@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/categories.css' %}">
+    <script type="text/javascript" src="{%  static 'js/listCollapse.js' %}"></script>
 
 {#    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">#}
 </head>
@@ -38,9 +40,10 @@
             <span class="dot"></span>
         </div>
     </header>
+
     <div class="box">
         <script class="random_image">
-            var a=Math.round(Math.random()*9)
+            var a=Math.round(Math.random()*13)
             // это число должно совпадать с максимальным индексом таблицы изображений
             image = new Array();
             image[0]="{% static 'img/1.jpg' %}"
@@ -53,18 +56,132 @@
             image[7]="{% static 'img/8.jpg' %}"
             image[8]="{% static 'img/9.jpg' %}"
             image[9]="{% static 'img/10.jpg' %}"
+            image[10]="{% static 'img/11.jpg' %}"
+            image[11]="{% static 'img/12.jpg' %}"
+            image[12]="{% static 'img/13.jpg' %}"
+            image[13]="{% static 'img/14.jpg' %}"
             // с максимальным индексом image[..] совпадает число, на которое умножаем вверху
             document.write ("<img alt='Image not found' class='random_picture' src="+image[a]+">");
         </script>
     </div>
-    <div class="categories">
-        Furniture
-    </div>
 
-    <section id="about" class="about">
-        <div class="container">
+    <div id="content">
+            <div class="mainstyle">
+                <ul id="categories-list">
+                    <li>Furniture
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Lighting
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li>Chapter 3
+                                <ul>
+                                    <li><a href="http://127.0.0.1:8000">Ex 1</a></li>
+                                    <li><a href="javascript:notA();">Ex 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Decor
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Arch.Elements
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Electronic
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Textile
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Child room
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Food, dishes
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Transport
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Plants, Land
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Thematic
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Miscellaneous
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
+
+            <script type="text/javascript">
+                compactMenu('categories-list',true,'');
+                {#selfLink('categories-list','samePage',true);#}
+                window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
+                function notA() {
+                window.alert('This is not a real link !!!!!!!!!!!!!');
+                }
+            </script>
         </div>
-    </section>
+
 </body>
 </html>
