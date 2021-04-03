@@ -82,12 +82,50 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-top: -20px;
     margin-left: 40px;
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform:translate(-50%,-50%);*/
     width: 1050px;
     height: 750px;
     object-fit: cover;
+}
+
+.search-box {
+    position: absolute;
+    background: #161616;
+    height: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-btn {
+    color: #efefef;
+    float: right;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.search-btn a:hover { color: #93282C; }
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 0 0 15px;
+    color: #efefef;
+    font-size: 20px;
+    line-height: 20px;
+    width: 240px;
+    text-transform: lowercase;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+
+
+.categories-list {
+    padding-top: 50px;
+    padding-left: 20px;
 }
 
 

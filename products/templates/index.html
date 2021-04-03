@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>HORDER 3D MODELS</title>
+    <link rel="icon" href="{% static 'favicon.png' %}" >
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/categories.css' %}">
     <script type="text/javascript" src="{%  static 'js/listCollapse.js' %}"></script>
 
-{#    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">#}
 </head>
 <body>
     <header id="header" class="header">
@@ -35,7 +36,6 @@
             </a>
 
             <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
-{#            <span class="lnr lnr-moon"></span>#}
 
             <span class="dot"></span>
         </div>
@@ -44,36 +44,57 @@
     <div class="box">
         <script class="random_image">
             var a=Math.round(Math.random()*13)
-            // это число должно совпадать с максимальным индексом таблицы изображений
+            // this number should be the same as the maximum number of the image[NUM]
             image = new Array();
-            image[0]="{% static 'img/1.jpg' %}"
-            image[1]="{% static 'img/2.jpg' %}"
-            image[2]="{% static 'img/3.jpg' %}"
-            image[3]="{% static 'img/4.jpg' %}"
-            image[4]="{% static 'img/5.jpg' %}"
-            image[5]="{% static 'img/6.jpg' %}"
-            image[6]="{% static 'img/7.jpg' %}"
-            image[7]="{% static 'img/8.jpg' %}"
-            image[8]="{% static 'img/9.jpg' %}"
-            image[9]="{% static 'img/10.jpg' %}"
-            image[10]="{% static 'img/11.jpg' %}"
-            image[11]="{% static 'img/12.jpg' %}"
-            image[12]="{% static 'img/13.jpg' %}"
-            image[13]="{% static 'img/14.jpg' %}"
-            // с максимальным индексом image[..] совпадает число, на которое умножаем вверху
+            image[0]="{% static 'img/1-w.jpg' %}"
+            image[1]="{% static 'img/2-w.jpg' %}"
+            image[2]="{% static 'img/3-w.jpg' %}"
+            image[3]="{% static 'img/4-w.jpg' %}"
+            image[4]="{% static 'img/5-w.jpg' %}"
+            image[5]="{% static 'img/6-w.jpg' %}"
+            image[6]="{% static 'img/7-w.jpg' %}"
+            image[7]="{% static 'img/8-w.jpg' %}"
+            image[8]="{% static 'img/9-w.jpg' %}"
+            image[9]="{% static 'img/10-w.jpg' %}"
+            image[10]="{% static 'img/11-w.jpg' %}"
+            image[11]="{% static 'img/12-w.jpg' %}"
+            image[12]="{% static 'img/13-w.jpg' %}"
+            image[13]="{% static 'img/14-w.jpg' %}"
+
             document.write ("<img alt='Image not found' class='random_picture' src="+image[a]+">");
         </script>
     </div>
 
+
+
     <div id="content">
             <div class="mainstyle">
-                <ul id="categories-list">
+                <div class="search-box">
+                    <label>
+                        <input class="search-txt" type="text" name="" placeholder="search">
+                    </label>
+                    <a class="search-btn" href="https://google.com">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="categories-list">
+                    <ul id="categories-list">
                     <li>Furniture
                         <ul>
                             <li><a href="javascript:notA();">Chapter 1</a></li>
                             <li><a href="javascript:notA();">Chapter 2</a></li>
                             <li><a href="javascript:notA();">Chapter 3</a></li>
                             <li><a href="javascript:notA();">Chapter 4</a></li>
+                            <li><a href="javascript:notA();">Chapter 5</a></li>
+                            <li><a href="javascript:notA();">Chapter 6</a></li>
+                            <li><a href="javascript:notA();">Chapter 7</a></li>
+                            <li><a href="javascript:notA();">Chapter 8</a></li>
+                            <li><a href="javascript:notA();">Chapter 9</a></li>
+                            <li><a href="javascript:notA();">Chapter 10</a></li>
+                            <li><a href="javascript:notA();">Chapter 11</a></li>
+                            <li><a href="javascript:notA();">Chapter 12</a></li>
+                            <li><a href="javascript:notA();">Chapter 13</a></li>
+                            <li><a href="javascript:notA();">Chapter 14</a></li>
                         </ul>
                     </li>
                     <li>Lighting
@@ -95,6 +116,16 @@
                             <li><a href="javascript:notA();">Chapter 2</a></li>
                             <li><a href="javascript:notA();">Chapter 3</a></li>
                             <li><a href="javascript:notA();">Chapter 4</a></li>
+                            <li><a href="javascript:notA();">Chapter 5</a></li>
+                            <li><a href="javascript:notA();">Chapter 6</a></li>
+                            <li><a href="javascript:notA();">Chapter 7</a></li>
+                            <li><a href="javascript:notA();">Chapter 8</a></li>
+                            <li><a href="javascript:notA();">Chapter 9</a></li>
+                            <li><a href="javascript:notA();">Chapter 10</a></li>
+                            <li><a href="javascript:notA();">Chapter 11</a></li>
+                            <li><a href="javascript:notA();">Chapter 12</a></li>
+                            <li><a href="javascript:notA();">Chapter 13</a></li>
+                            <li><a href="javascript:notA();">Chapter 14</a></li>
                         </ul>
                     </li>
                     <li>Arch.Elements
@@ -170,15 +201,16 @@
                         </ul>
                     </li>
                 </ul>
+                </div>
+
             </div>
 
 
             <script type="text/javascript">
                 compactMenu('categories-list',true,'');
-                {#selfLink('categories-list','samePage',true);#}
                 window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
                 function notA() {
-                window.alert('This is not a real link !!!!!!!!!!!!!');
+                window.alert('This is not a real link !!!!!!!!');
                 }
             </script>
         </div>

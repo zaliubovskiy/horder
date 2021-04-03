@@ -8,5 +8,5 @@ class ProductView(View):
     """list of models"""
     def get(self, request):
         products = Product.objects.all()
-        return render(request, "index.html")
+        return render(request, "search.html")
 

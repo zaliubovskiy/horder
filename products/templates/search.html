@@ -1,10 +1,204 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HORDER</title>
+    <title>HORDER 3D MODELS</title>
+    <link rel="icon" href="{% static 'favicon.png' %}" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/categories.css' %}">
+    <script type="text/javascript" src="{%  static 'js/listCollapse.js' %}"></script>
+
 </head>
 <body>
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="naming">
+                <a href="search.html" class="search-button">
+                    color
+                </a>
+                <a href="search.html" class="search-button">
+                    style
+                </a>
+                <a href="search.html" class="search-button">
+                    brand
+                </a>
+                <a href="search.html" class="search-button">
+                    material
+                </a>
+
+                <hr style="
+                    height:4px;
+                    margin-top: -1px;
+                    border-width:0;
+                    background-color:#161616;
+                    width: 1820px;
+                    margin-left: -325px;
+                    ">
+            </h1>
+
+            <a href="index.html" class="main-name">
+                HORDER
+            </a>
+
+            <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
+
+            <span class="dot"></span>
+        </div>
+    </header>
+
+
+
+    <div id="content">
+            <div class="mainstyle">
+                <div class="search-box">
+                    <label>
+                        <input class="search-txt" type="text" name="" placeholder="search">
+                    </label>
+                    <a class="search-btn" href="https://google.com">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="categories-list">
+                    <ul id="categories-list">
+                    <li>Furniture
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            <li><a href="javascript:notA();">Chapter 5</a></li>
+                            <li><a href="javascript:notA();">Chapter 6</a></li>
+                            <li><a href="javascript:notA();">Chapter 7</a></li>
+                            <li><a href="javascript:notA();">Chapter 8</a></li>
+                            <li><a href="javascript:notA();">Chapter 9</a></li>
+                            <li><a href="javascript:notA();">Chapter 10</a></li>
+                            <li><a href="javascript:notA();">Chapter 11</a></li>
+                            <li><a href="javascript:notA();">Chapter 12</a></li>
+                            <li><a href="javascript:notA();">Chapter 13</a></li>
+                            <li><a href="javascript:notA();">Chapter 14</a></li>
+                        </ul>
+                    </li>
+                    <li>Lighting
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li>Chapter 3
+                                <ul>
+                                    <li><a href="http://127.0.0.1:8000">Ex 1</a></li>
+                                    <li><a href="javascript:notA();">Ex 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Decor
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            <li><a href="javascript:notA();">Chapter 5</a></li>
+                            <li><a href="javascript:notA();">Chapter 6</a></li>
+                            <li><a href="javascript:notA();">Chapter 7</a></li>
+                            <li><a href="javascript:notA();">Chapter 8</a></li>
+                            <li><a href="javascript:notA();">Chapter 9</a></li>
+                            <li><a href="javascript:notA();">Chapter 10</a></li>
+                            <li><a href="javascript:notA();">Chapter 11</a></li>
+                            <li><a href="javascript:notA();">Chapter 12</a></li>
+                            <li><a href="javascript:notA();">Chapter 13</a></li>
+                            <li><a href="javascript:notA();">Chapter 14</a></li>
+                        </ul>
+                    </li>
+                    <li>Arch.Elements
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Electronic
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Textile
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Child room
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Food, dishes
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Transport
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Plants, Land
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Thematic
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                    <li>Miscellaneous
+                        <ul>
+                            <li><a href="javascript:notA();">Chapter 1</a></li>
+                            <li><a href="javascript:notA();">Chapter 2</a></li>
+                            <li><a href="javascript:notA();">Chapter 3</a></li>
+                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+
+            </div>
+
+
+            <script type="text/javascript">
+                compactMenu('categories-list',true,'');
+                window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
+                function notA() {
+                window.alert('This is not a real link !!!!!!!!');
+                }
+            </script>
+        </div>
 
 </body>
 </html>

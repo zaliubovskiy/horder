@@ -1,5 +1,10 @@
 /* list styles */
-div.mainstyle { width: 350px; margin-left: 1150px;}
+/*div.mainstyle { width: 350px; margin-left: 1150px;}*/
+div.mainstyle {
+    width: 350px;
+    float: right;
+    padding-right: 350px;
+}
 div.mainstyle ul ul { margin-left: 25px; }
 div.mainstyle ul, div.mainstyle li { padding: 0; margin: 0; list-style-type: none; }
 div.mainstyle li a { margin-left: 0;
