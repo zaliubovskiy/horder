@@ -17,7 +17,7 @@
     <header id="header" class="header">
         <div class="container">
             <h1 class="naming">
-                <a href="search.html" class="search-button">
+                <a href="search2.html" class="search-button">
                     Find the best 3D assets
                 </a>
 
@@ -35,39 +35,6 @@
                 HORDER
             </a>
 
-            <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
-
-            <span class="dot"></span>
-        </div>
-    </header>
-
-    <div class="box">
-        <script class="random_image">
-            var a=Math.round(Math.random()*13)
-            // this number should be the same as the maximum number of the image[NUM]
-            image = new Array();
-            image[0]="{% static 'img/1-w.jpg' %}"
-            image[1]="{% static 'img/2-w.jpg' %}"
-            image[2]="{% static 'img/3-w.jpg' %}"
-            image[3]="{% static 'img/4-w.jpg' %}"
-            image[4]="{% static 'img/5-w.jpg' %}"
-            image[5]="{% static 'img/6-w.jpg' %}"
-            image[6]="{% static 'img/7-w.jpg' %}"
-            image[7]="{% static 'img/8-w.jpg' %}"
-            image[8]="{% static 'img/9-w.jpg' %}"
-            image[9]="{% static 'img/10-w.jpg' %}"
-            image[10]="{% static 'img/11-w.jpg' %}"
-            image[11]="{% static 'img/12-w.jpg' %}"
-            image[12]="{% static 'img/13-w.jpg' %}"
-            image[13]="{% static 'img/14-w.jpg' %}"
-
-            document.write ("<img alt='Image not found' class='random_picture' src="+image[a]+">");
-        </script>
-    </div>
-
-
-
-    <div id="content">
             <div class="mainstyle">
                 <div class="search-box">
                     <label>
@@ -202,18 +169,44 @@
                     </li>
                 </ul>
                 </div>
-
             </div>
 
+            <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
 
-            <script type="text/javascript">
-                compactMenu('categories-list',true,'');
-                window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
-                function notA() {
-                window.alert('This is not a real link !!!!!!!!');
-                }
-            </script>
+            <span class="dot"></span>
         </div>
+    </header>
 
+    <div class="box">
+        <script class="random_image">
+            var a=Math.round(Math.random()*13)
+            // this number should be the same as the maximum number of the image[NUM]
+            image = new Array();
+            image[0]="{% static 'img/1-w.jpg' %}"
+            image[1]="{% static 'img/2-w.jpg' %}"
+            image[2]="{% static 'img/3-w.jpg' %}"
+            image[3]="{% static 'img/4-w.jpg' %}"
+            image[4]="{% static 'img/5-w.jpg' %}"
+            image[5]="{% static 'img/6-w.jpg' %}"
+            image[6]="{% static 'img/7-w.jpg' %}"
+            image[7]="{% static 'img/8-w.jpg' %}"
+            image[8]="{% static 'img/9-w.jpg' %}"
+            image[9]="{% static 'img/10-w.jpg' %}"
+            image[10]="{% static 'img/11-w.jpg' %}"
+            image[11]="{% static 'img/12-w.jpg' %}"
+            image[12]="{% static 'img/13-w.jpg' %}"
+            image[13]="{% static 'img/14-w.jpg' %}"
+
+            document.write ("<img alt='Image not found' class='random_picture' src="+image[a]+">");
+        </script>
+    </div>
+
+    <script type="text/javascript">
+        compactMenu('categories-list',true,'');
+        window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
+        function notA() {
+        window.alert('This is not a real link !!!!!!!!');
+        }
+    </script>
 </body>
 </html>

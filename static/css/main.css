@@ -22,24 +22,34 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -50px;
 }
 
+.middle {
+    max-width: 1170px;
+    margin: 0 auto 0 350px;
+
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
 }
 
 .naming {
+    max-width: 1170px;
     margin-top: 167px;
     font-style: normal;
     font-weight: normal;
 }
 
+
 .naming a:hover { color: #93282C; }
 
 .search-button {
-    margin-left: 100px;
+    margin-left: 5px;
     font-size: 20px;
     color: #161616;
     text-decoration-line: none;
+    padding-right: 110px;
+
 }
 
 .main-name {
@@ -81,7 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 .random_picture {
     position: absolute;
     margin-top: -20px;
-    margin-left: 40px;
     width: 1050px;
     height: 750px;
     object-fit: cover;
@@ -106,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-div.search-btn a:hover { color: #93282C; }
+.search-btn a:hover { color: #93282C; }
 
 .search-txt{
     border: none;
@@ -128,40 +137,31 @@ div.search-btn a:hover { color: #93282C; }
     padding-left: 20px;
 }
 
+.product-list .card {
+    background-color: #efefef;
+    border-radius: 3px;
+    color: #161616;
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 0 2px 2px #c2c2c2;
+    text-align: center;
+}
 
-/*.header {*/
-/*    background: url("../images/background.jpg") no-repeat center top /cover;*/
-/*}*/
+.card .title {
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+}
 
-/*header a {*/
-/*    color: #161616;*/
-/*}*/
+.card img {
+    max-width: 100%;
+    border-radius: 3px;
+}
 
-/*.menu {*/
-/*    padding-top: 167px;*/
-/*    display: flex;*/
-/*}*/
-
-/*.menu li a {*/
-/*    text-transform: uppercase;*/
-/*    text-decoration: none;*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*.menu li {*/
-/*}*/
-
-/*.nav {*/
-/*    display: flex;*/
-/*}*/
-
-/*.logo {*/
-/*    margin-right: 1500px;*/
-/*    max-height: 80px;*/
-/*    max-width: 103px;*/
-/*}*/
-
-
-/*.sidenav a:hover, .dropdown-btn:hover {*/
-/*  color: #f1f1f1;*/
-/*}*/
+.product-container {
+    margin-left: 250px;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}

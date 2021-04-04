@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>HORDER 3D MODELS</title>
     <link rel="icon" href="{% static 'favicon.png' %}" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -43,6 +44,21 @@
                 HORDER
             </a>
 
+            <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
+
+            <span class="dot"></span>
+        </div>
+    </header>
+
+    <div class="product-list">
+        {%  for product in product_list %}
+
+        {% endfor %}
+    </div>
+
+
+
+    <div id="content">
             <div class="mainstyle">
                 <div class="search-box">
                     <label>
@@ -177,36 +193,18 @@
                     </li>
                 </ul>
                 </div>
+
             </div>
 
-            <img src="{% static 'images/logo.gif' %}" alt="Animation Logo" class="logo">
 
-            <span class="dot"></span>
+            <script type="text/javascript">
+                compactMenu('categories-list',true,'');
+                window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
+                function notA() {
+                window.alert('This is not a real link !!!!!!!!');
+                }
+            </script>
         </div>
-    </header>
-
-    <div class="product-list">
-        <div class="product-container">
-            {%  for product in product_list %}
-                <div class="card">
-                    <div class="image">
-                        <img src="http://drive.google.com/uc?export=view&id={{ product.image }}" alt="image">
-                    </div>
-                    <div class="title">
-                        {{ product.name }}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-
-<script type="text/javascript">
-    compactMenu('categories-list',true,'');
-    window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
-    function notA() {
-    window.alert('This is not a real link !!!!!!!!');
-    }
-</script>
 
 </body>
 </html>

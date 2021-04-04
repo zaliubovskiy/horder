@@ -34,16 +34,16 @@ class SubCategory(models.Model):
 
 class Product(models.Model):
 
-    name = models.CharField("Name", max_length=255)
-    image = models.CharField("Image", max_length=500)
-    download_link = models.CharField("Download link", max_length=500, null=True)
-    description = models.TextField("Description", null=True, blank=True)
+    name = models.CharField("Name", max_length=40)
+    image = models.CharField("Image", max_length=255)
+    download_link = models.CharField("Download link", max_length=500, null=True, )
+    description = models.TextField("Description", null=True, blank=True, max_length=1000)
     category = models.ManyToManyField("SubCategory", verbose_name="categories")
     date_uploaded = models.DateField("Upload date", default=datetime.date.today)
     url = models.SlugField(max_length=100, unique=True)
     colors = models.ManyToManyField("Color", verbose_name="colors")
     materials = models.ManyToManyField("Material", verbose_name="materials")
-    brand = models.ForeignKey("Brand", verbose_name='brands', on_delete=models.SET_NULL, blank=True, null=True)
+    brand = models.ManyToManyField("Brand", verbose_name='brands', blank=True, null=True)
 
     def __str__(self):
         return self.name
