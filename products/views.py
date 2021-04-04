@@ -8,7 +8,7 @@ class ProductView(View):
     """list of models"""
     def get(self, request):
         products = Product.objects.all()
-        return render(request, "product_detail.html", {"product_list": products})
+        return render(request, "index.html", {"product_list": products})
 
 
 class ProductDetailView(View):

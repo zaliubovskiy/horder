@@ -16,17 +16,8 @@
     <header id="header" class="header">
         <div class="container">
             <h1 class="naming">
-                <a href="search2.html" class="search-button">
-                    color
-                </a>
-                <a href="search2.html" class="search-button">
-                    style
-                </a>
-                <a href="search2.html" class="search-button">
-                    brand
-                </a>
-                <a href="search2.html" class="search-button">
-                    material
+                <a href="#" class="search-button" onclick="history.back();">
+                    <i class="fas fa-chevron-circle-left"></i>
                 </a>
 
                 <hr style="
@@ -39,140 +30,58 @@
                     ">
             </h1>
 
-            <a href="index.html" class="main-name">
+            <a href="#" class="main-name">
                 HORDER
             </a>
 
             <div class="mainstyle">
                 <div class="search-box">
                     <label>
-                        <input class="search-txt" type="text" name="" placeholder="search">
+                        <input class="search-txt" type="text" name="" placeholder="DOWNLOAD">
                     </label>
-                    <a class="search-btn" href="https://google.com">
-                        <i class="fas fa-search"></i>
-                    </a>
                 </div>
                 <div class="categories-list">
                     <ul id="categories-list">
-                    <li>Furniture
+                    <li>Category
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                            <li><a href="javascript:notA();">Chapter 5</a></li>
-                            <li><a href="javascript:notA();">Chapter 6</a></li>
-                            <li><a href="javascript:notA();">Chapter 7</a></li>
-                            <li><a href="javascript:notA();">Chapter 8</a></li>
-                            <li><a href="javascript:notA();">Chapter 9</a></li>
-                            <li><a href="javascript:notA();">Chapter 10</a></li>
-                            <li><a href="javascript:notA();">Chapter 11</a></li>
-                            <li><a href="javascript:notA();">Chapter 12</a></li>
-                            <li><a href="javascript:notA();">Chapter 13</a></li>
-                            <li><a href="javascript:notA();">Chapter 14</a></li>
+                            {%  for category in product.category.all %}
+                                <li><a href="javascript:notA();">{{ category.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-                    <li>Lighting
+                    <li>Color
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li>Chapter 3
-                                <ul>
-                                    <li><a href="http://127.0.0.1:8000">Ex 1</a></li>
-                                    <li><a href="javascript:notA();">Ex 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            {%  for color in product.colors.all %}
+                                <li><a href="javascript:notA();">{{ color.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-                    <li>Decor
+                    <li>Material
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                            <li><a href="javascript:notA();">Chapter 5</a></li>
-                            <li><a href="javascript:notA();">Chapter 6</a></li>
-                            <li><a href="javascript:notA();">Chapter 7</a></li>
-                            <li><a href="javascript:notA();">Chapter 8</a></li>
-                            <li><a href="javascript:notA();">Chapter 9</a></li>
-                            <li><a href="javascript:notA();">Chapter 10</a></li>
-                            <li><a href="javascript:notA();">Chapter 11</a></li>
-                            <li><a href="javascript:notA();">Chapter 12</a></li>
-                            <li><a href="javascript:notA();">Chapter 13</a></li>
-                            <li><a href="javascript:notA();">Chapter 14</a></li>
+                            {%  for material in product.materials.all %}
+                                <li><a href="javascript:notA();">{{ material.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-                    <li>Arch.Elements
+                    <li>Style
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            {%  for style in product.style.all %}
+                                <li><a href="javascript:notA();">{{ style.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-                    <li>Electronic
+                    <li>Brand
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            {%  for brand in product.brand.all %}
+                                <li><a href="javascript:notA();">{{ brand.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
-                    <li>Textile
+                    <li>Description
                         <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Child room
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Food, dishes
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Transport
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Plants, Land
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Thematic
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                        </ul>
-                    </li>
-                    <li>Miscellaneous
-                        <ul>
-                            <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
+                            <li><a href="javascript:notA();">
+                                {{ product.description }}
+                            </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -185,18 +94,16 @@
         </div>
     </header>
 
-    <div class="product-list">
-        <div class="product-container">
-            {%  for product in product_list %}
-                <div class="card">
-                    <div class="image">
-                        <img src="http://drive.google.com/uc?export=view&id={{ product.image }}" alt="image">
-                    </div>
-                    <div class="title">
-                        {{ product.name }}
-                    </div>
+    <div class="product-single">
+        <div class="product-container-single">
+            <div class="card-single">
+                <div class="image">
+                    <img src="http://drive.google.com/uc?export=view&id={{ product.image }}" alt="image">
                 </div>
-            {% endfor %}
+                <div class="title">
+                    {{ product.name }}
+                </div>
+            </div>
         </div>
     </div>
 

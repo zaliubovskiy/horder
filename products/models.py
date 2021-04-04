@@ -43,7 +43,8 @@ class Product(models.Model):
     url = models.SlugField(max_length=100, unique=True)
     colors = models.ManyToManyField("Color", verbose_name="colors")
     materials = models.ManyToManyField("Material", verbose_name="materials")
-    brand = models.ManyToManyField("Brand", verbose_name='brands', blank=True, null=True)
+    brand = models.ManyToManyField("Brand", verbose_name='brands', blank=True)
+    style = models.ManyToManyField("Style", verbose_name="styles", blank=True)
 
     def __str__(self):
         return self.name
