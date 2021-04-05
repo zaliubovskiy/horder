@@ -18,16 +18,16 @@
     <header id="header" class="header">
         <div class="container">
             <h1 class="naming">
-                <a href="search.html" class="search-button">
+                <a href="/search" class="search-button">
                     color
                 </a>
-                <a href="search.html" class="search-button">
+                <a href="/search" class="search-button">
                     style
                 </a>
-                <a href="search.html" class="search-button">
+                <a href="/search" class="search-button">
                     brand
                 </a>
-                <a href="search.html" class="search-button">
+                <a href="/search" class="search-button">
                     material
                 </a>
 
@@ -50,7 +50,7 @@
                     <label>
                         <input class="search-txt" type="text" name="" placeholder="search">
                     </label>
-                    <a class="search-btn" href="https://google.com">
+                    <a class="search-btn" href="/search">
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
@@ -58,20 +58,9 @@
                     <ul id="categories-list">
                     <li>Furniture
                         <ul>
+                            {% for category in categories.all %}
                             <li><a href="javascript:notA();">Chapter 1</a></li>
-                            <li><a href="javascript:notA();">Chapter 2</a></li>
-                            <li><a href="javascript:notA();">Chapter 3</a></li>
-                            <li><a href="javascript:notA();">Chapter 4</a></li>
-                            <li><a href="javascript:notA();">Chapter 5</a></li>
-                            <li><a href="javascript:notA();">Chapter 6</a></li>
-                            <li><a href="javascript:notA();">Chapter 7</a></li>
-                            <li><a href="javascript:notA();">Chapter 8</a></li>
-                            <li><a href="javascript:notA();">Chapter 9</a></li>
-                            <li><a href="javascript:notA();">Chapter 10</a></li>
-                            <li><a href="javascript:notA();">Chapter 11</a></li>
-                            <li><a href="javascript:notA();">Chapter 12</a></li>
-                            <li><a href="javascript:notA();">Chapter 13</a></li>
-                            <li><a href="javascript:notA();">Chapter 14</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                     <li>Lighting
