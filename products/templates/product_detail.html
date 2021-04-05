@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>HORDER 3D MODELS</title>
     <link rel="icon" href="{% static 'favicon.png' %}" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/categories.css' %}">
@@ -35,13 +37,16 @@
             </a>
 
             <div class="mainstyle">
-                <div class="search-box">
-                    <label>
-                        <input class="search-txt" type="text" name="" placeholder="DOWNLOAD">
-                    </label>
+                <div class="download-container">
+                    <a href="http://drive.google.com/uc?export=view&id={{ product.download_link }}" class="download-button">
+                        <button class="download-button">
+                            Download
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </a>
                 </div>
-                <div class="categories-list">
-                    <ul id="categories-list">
+                <div class="properties-list">
+                    <ul id="properties-list">
                     <li>Category
                         <ul>
                             {%  for category in product.category.all %}
@@ -108,7 +113,7 @@
     </div>
 
 <script type="text/javascript">
-    compactMenu('categories-list',true,'');
+    compactMenu('properties-list',true,'');
     window.onunload = function () { if( document.getElementById && document.getElementById('consent').checked ); };
     function notA() {
     window.alert('This is not a real link !!!!!!!!');

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>HORDER 3D MODELS</title>
     <link rel="icon" href="{% static 'favicon.png' %}" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/categories.css' %}">
@@ -188,14 +190,14 @@
     <div class="product-list">
         <div class="product-container">
             {%  for product in product_list %}
-                <div class="card">
+                <a href="{{ product.get_absolute_url }}" class="card">
                     <div class="image">
                         <img src="http://drive.google.com/uc?export=view&id={{ product.image }}" alt="image">
                     </div>
                     <div class="title">
                         {{ product.name }}
                     </div>
-                </div>
+                </a>
             {% endfor %}
         </div>
     </div>

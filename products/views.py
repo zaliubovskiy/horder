@@ -1,18 +1,18 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
 
 from .models import Product
 
 
-class ProductView(View):
+class ProductView(ListView):
     """list of models"""
-    def get(self, request):
-        products = Product.objects.all()
-        return render(request, "index.html", {"product_list": products})
+    model = Product
+    queryset = Product.objects.all()
+    template_name = "product_detail.html"
 
 
-class ProductDetailView(View):
+class ProductDetailView(DetailView):
     """full description of the 3d Model"""
-    def get(self, request, pk):
-        product = Product.objects.get(id=pk)
-        return render(request, "product_detail.html", {"product": product})
+    model = Product
+    slug_field = "url"
