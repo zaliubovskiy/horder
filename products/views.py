@@ -5,31 +5,32 @@ from django.views.generic.base import View
 from .models import Product, Category, SubCategory
 
 
-class SubCategoryFilter:
+# class SubCategoryFilter:
+#
+#     def get_category(self):
+#         return Category.objects.all()
+#
+#     def get_subcategory(self):
+#         return SubCategory.objects.all()
 
-    def get_category(self):
-        return Category.objects.all()
+class IndexView(ListView):
+    """home page"""
+    model = Product
+    template_name = "index.html"
 
-    def get_subcategory(self):
-        return SubCategory.objects.all()
 
-
-class ProductView(SubCategoryFilter, ListView):
+class ProductView(ListView):
     """list of models"""
     model = Product
     queryset = Product.objects.all()
     template_name = "search.html"
 
 
-class ProductDetailView(SubCategoryFilter, DetailView):
+class ProductDetailView(DetailView):
     """full description of the 3d Model"""
     model = Product
     slug_field = "url"
-    template_name = "product_detail.html"
+    template_name = "product.html"
 
 
-class IndexView(SubCategoryFilter, ListView):
-    """home page"""
-    model = Product
-    queryset = Product.objects.all()
-    template_name = "index.html"
+
