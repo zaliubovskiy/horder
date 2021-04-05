@@ -29,7 +29,7 @@ class ProductDetailView(SubCategoryFilter, DetailView):
 
 
 class IndexView(SubCategoryFilter, ListView):
-    """list of models"""
+    """home page"""
     model = Product
     queryset = Product.objects.all()
     template_name = "index.html"
